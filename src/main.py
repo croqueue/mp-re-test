@@ -1,5 +1,6 @@
 from machine import Pin
 from utime import sleep
+from dummy import dummy_fn
 
 pin = Pin("LED", Pin.OUT)
 
@@ -12,3 +13,4 @@ while True:
         break
 pin.off()
 print("Finished.")
+dummy_fn()
